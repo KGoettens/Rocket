@@ -1,0 +1,40 @@
+<!doctype html>
+
+<html lang="pt-br">
+    <head>
+        <title> Listas </title>
+        <meta charset="UTF-8">
+
+        <style>
+            li ul {
+                height: 0;
+                overflow: hidden;
+                transition: height .5s;
+            }
+
+            li:hover {
+                background: #CCC;
+            }
+
+            li:hover ul {
+                height: 50px;
+            }
+
+        </style>
+    
+    </head>
+
+    <body>
+        <ul>
+            <li>item 1</li>
+            <li>item 2
+                <ul>
+                    <li>item 2.1</li>
+                    <li>item 2.2</li>
+                </ul>
+            </li>
+            <li>item 3</li>
+        </ul>
+    </body>
+
+</html>

@@ -1,0 +1,39 @@
+
+h1 { 
+    font-size: 35px;   
+    text-align: center;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    border-bottom: solid 3px #00ff8c;
+}
+
+p {
+    font-size: 17.5px;
+    color: #4d4d4d;
+    padding-left: 22px;
+}
+
+.negrito {
+    font-weight: bold;
+    font-size: 20px;
+    color: #000000;
+}
+
+.subtitulo {
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 10px;
+    color: #FFFFFF;
+    background-color: #000000;
+    border-bottom: solid 3px #00ff8c;
+}
+
+.idiomas {
+    font-weight: bold;
+    font-size: 25px;
+    padding-left: 10px;
+    color: #FFFFFF;
+    background-color: #000000;
+    border-bottom: solid 3px #00ff8c;
+}
