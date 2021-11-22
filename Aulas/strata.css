@@ -1,0 +1,388 @@
+body {
+    font-family: 'Karla', sans-serif;
+    color: rgba(19, 19, 19, 0.7);
+    line-height: 2;
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(119, 94, 27);
+    font-weight: bold;
+}
+
+p {
+    margin: 0 0 2em;
+}
+
+img {
+    max-width: 100%;
+}
+/* grid */
+.row-table-1 {
+    overflow: auto;
+}
+
+.col-table-1 {
+    width: 65%;
+    float: left;
+}
+
+.col-table-1-2 {
+    width: 32%;
+    margin-left: 3%;
+    float: left;
+}
+
+/* grid*/
+h1, h2, h3, h4, h5, h6 {
+    color: #464646;
+    font-weight: normal;
+    margin: 1em 0;
+} 
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 26px;
+}
+
+h4 {
+    font-size: 22px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 14px;
+}
+
+sub, sup {
+    font-size: 12px;
+}
+
+blockquote {
+    border-left: 5px solid #7a7a7a;
+    margin: 2em 0;
+    padding: .5em 0 .5em  1.5em;
+}
+
+code {
+    background: #f7f7f7;
+    border-radius: .35em;
+    border: 2px solid #efefef;
+    font-size: .9em;
+    padding: .25em .65em;
+    font-family: "Courier New";
+}
+
+pre code {
+    display: block;
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style-position: inside;
+}
+
+.ul-alternate {
+    list-style-type: none;
+}
+.ul-alternate li {
+    border-bottom: 1px solid #CCC;
+    padding-left: 10px;
+}
+
+.ul-alternate li:last-child {
+    border: 0;
+}
+
+.ul-icons {
+    list-style-type: none;
+}
+
+.ul-icons li {
+    display: inline-block;
+    font-size: 30px;
+    margin-right: 15px;
+    color: rgb(119, 94, 27);
+}
+
+input, label, textarea {
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input, textarea, select {
+    background: rgb(236, 236, 236);
+    padding: 15px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    margin-bottom: 15px;
+}
+
+select {
+    width: 50%;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    width: auto;
+}
+
+textarea {
+    height: 120px;
+}
+
+input:focus, textarea:focus {
+    border: 2px solid rgb(119, 94, 27);
+    outline: none;
+}
+
+input {
+    color: rgba(19, 19, 19, 0.6);
+}
+
+.button-default {
+    background-color: rgb(119, 94, 27);
+    border: 3px solid rgb(119, 94, 27);
+    border-radius: 5px;
+    color: white;
+    padding: .75em 1.5em;
+    margin-top: 5px;
+    font-size: 1em;
+    display: inline-block;
+    transition: all .5s;
+    width: auto;
+    cursor: pointer;
+}
+
+.button-default:hover {
+    background-color: rgb(153, 122, 35);
+    border-color:rgb(153, 122, 35);
+}
+
+.button-default-stroke {
+    background-color: white;
+    color: rgb(119, 94, 27);
+    border-color: rgb(119, 94, 27);
+    cursor: pointer;
+}
+
+.button-default-stroke:hover {
+    color: white;
+    border-color:rgb(153, 122, 35);
+}
+
+.button-default-small {
+    font-size: 0.8em;
+}
+
+.button-default-full {
+    display: block;
+    text-align: center;
+    margin-bottom: 3px;
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 2em;
+    border-collapse: collapse;
+}
+
+.table td {
+    padding: .75em;
+}
+
+.table th {
+    padding: .75em;
+    background-color: rgba(119, 94, 27, .4);
+}
+
+.table tbody tr td {
+    border-bottom: 2px solid rgb(156, 156, 156);
+}
+
+.table tbody tr:first-child td {
+    border-top: 2px solid rgb(156, 156, 156);
+}
+
+.table tbody tr:last-child td {
+    border-bottom: 2px solid rgb(156, 156, 156);
+}
+
+.table tbody tr:nth-child(even) td {
+    background: rgba(119, 94, 27, .4);
+}
+
+.table-alternate tbody td {
+    border: 1px solid rgb(156, 156, 156);
+}
+
+.table-alternate thead, .table-alternate tfoot {
+    border: 1px solid rgb(156, 156, 156);
+}
+
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 35%;
+    padding: 224px 54px 72px;
+    box-sizing: border-box;
+    background-image: url(../Aulas/imagens/bg-2.jpg);
+    background-position: left top;
+    background-size: auto, cover; 
+    text-align: right;
+}
+
+.main-header-title {
+    font-family: 'Heebo', sans-serif;
+    line-height: 1.5;
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.main-header-title:hover {
+    font-size: 27px;
+    transition: 0.4s;
+}
+
+.main-header-title-strong {
+    font-weight: normal;
+}
+
+.link-style {
+    transition: color 1s linear;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.8);
+    border-bottom: 1px dotted;  
+}
+
+.link-style:hover {
+    color: rgb(119, 94, 27);
+}
+
+.main-content {
+    width: 65%; 
+    margin-left: 35%;
+    padding: 124px 54px 72px;
+    box-sizing: border-box;
+}
+
+.main-header-link img {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.recent-works-card img {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.recent-works-card-tittle {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.row, .row-1 {
+    overflow: auto;
+}
+
+.col-2:first-child {
+    margin-right: 2%;
+}
+
+.col-2:last-child {
+    margin-left: 2%;
+}
+
+.col-2 {
+    width: 48%;
+    float: left;
+}
+
+.button-enviar {
+    background-color: white;
+    color: rgb(119, 94, 27);
+    border: 2px solid rgb(119, 94, 27);
+    width: auto;
+    font-size: 1em;
+}
+
+.submit-enviar, .reset-limpar {
+    width: 35%;
+    border: 2px solid rgb(119, 94, 27);
+}
+
+.submit-enviar {
+    background-color: rgb(119, 94, 27);
+    color: white;
+}
+
+.img-left {
+    float: left;
+    width: 15%;
+}
+
+.img-right {
+    float: right;
+    width: 15%;
+}
+
+.gallery-img img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.col-table-1-3 {
+    width: 32%;
+    float: left;
+    border-radius: 5px;
+    margin-top: 2%;
+}
+
+.col-table-1-3:nth-child(3n - 2) { /* 1, 4, 7 */
+    margin-right: 2%;
+}
+
+.col-table-1-3:nth-child(3n) { /* 3, 6, 9 */
+    margin-left: 2%;
+}
+
+.main-footer {
+    display: inline-block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 35%;
+    padding: 0 54px 72px 0;
+    box-sizing: border-box;
+    text-align: right;
+    font-size: 13px;
+    line-height: normal;
+}
+
+.main-footer li {
+    display: inline-block;
+}
+
+.ul-icons {
+    margin-right: 40px;
+    margin-bottom: 15px;
+}
+
+.copyright li:first-child {
+    padding-right: 3px;
+    border-right: 2px solid rgba(19, 19, 19, 0.3);
+}
