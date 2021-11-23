@@ -260,11 +260,6 @@ input {
     font-weight: normal;
 }
 
-.main-header-title:hover {
-    font-size: 27px;
-    transition: 0.4s;
-}
-
 .main-header-title-strong {
     font-weight: normal;
 }
@@ -392,4 +387,60 @@ input {
 .copyright li:first-child {
     padding-right: 3px;
     border-right: 2px solid rgba(19, 19, 19, 0.3);
+}
+
+.checkbox-forms label {
+
+}
+
+.checkbox-verification {
+    margin-top: 10px;
+}
+
+.checkbox-forms-priority label {
+    margin-bottom: 10px;
+}
+
+.checkbox-forms-priority span, .checkbox-verification span{
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    background: rgb(153, 122, 35);
+    border-radius: 15px;
+    
+}
+/*rgb(119, 94, 27)*/
+.checkbox-verification label {
+    margin-bottom: 20px;
+}
+
+.checkbox-verification span{
+    background: rgb(119, 94, 27);       
+}
+
+label span:before {
+    content: '';
+    display: block;
+    background: rgba(61, 61, 61, 0.6);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 2.8px;
+    transition: all .3s ease-in-out;
+}
+
+label input:checked + span:before {
+    transform: translate(20px);
+    background: rgb(61, 61, 61);
+}
+
+.checkbox-forms input {
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.checkbox-forms input:focus + span {
+    outline: 2px solid rgb(119, 94, 27, 0.4);
 }

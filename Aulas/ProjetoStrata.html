@@ -199,8 +199,8 @@
 
                     <h3>Icons</h3>
                     <ul class="ul-icons">
-                        <li><span  class="hidden">Twitter</span><i class="fab fa-twitter"></i></li>
-                        <li><span  class="hidden">Facebook</span><i class="fab fa-facebook-square"></i></li>
+                        <li><span class="hidden">Twitter</span><i class="fab fa-twitter"></i></li>
+                        <li><span class="hidden">Facebook</span><i class="fab fa-facebook-square"></i></li>
                     </ul>
                 </div>
             </div>
@@ -363,14 +363,19 @@
                     <option value="2"> Selecio</option>
                     <option value="3"> Seleci</option>
                 </select>
-
-                <label><input type="radio" value="baixa" name="prioridade"> Baixa Prioridade</label>
-                <label><input type="radio" value="media" name="prioridade"> Média Prioridade</label>
-                <label><input type="radio" value="alta" name="prioridade"> Alta Prioridade</label>
-
-                <label><input type="checkbox" name="copy" value="1"> Envie-me uma cópia</label>
-                <label><input type="checkbox" name="humans" value="1"> Sou humano</label>
-
+                <div class="checkbox-forms">
+                    <div class="checkbox-forms-priority">
+                        <label><input type="radio" value="baixa" name="prioridade"><span></span> Baixa
+                            Prioridade</label>
+                        <label><input type="radio" value="media" name="prioridade"><span></span> Média
+                            Prioridade</label>
+                        <label><input type="radio" value="alta" name="prioridade"><span></span> Alta Prioridade</label>
+                    </div>
+                    <div class="checkbox-verification">
+                        <label><input type="checkbox" name="copy" value="1"><span></span> Envie-me uma cópia</label>
+                        <label><input type="checkbox" name="humans" value="1"><span></span> Sou humano</label>
+                    </div>
+                </div>
                 <label for="msg">Mensagem</label>
                 <textarea placeholder="digite uma mensagem" id="msg"></textarea>
 
@@ -434,7 +439,7 @@
     <footer class="main-footer">
         <ul class="ul-icons">
             <li><span class="hidden">Twitter</span><i class="fab fa-twitter"></i></li>
-            <li><span class="hidden">Facebook</span><i class="fab fa-facebook-square">></i></li>
+            <li><span class="hidden">Facebook</span><i class="fab fa-facebook-square"></i></li>
         </ul>
         <ul class="copyright">
             <li>© Untitled</li>
