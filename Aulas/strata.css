@@ -25,6 +25,9 @@ img {
     overflow: hidden;
     display: block;
 }
+
+
+
 /* grid */
 .row-table-1 {
     overflow: auto;
@@ -389,8 +392,8 @@ input {
     border-right: 2px solid rgba(19, 19, 19, 0.3);
 }
 
-.checkbox-forms label {
-
+.checkbox-forms span {
+    transform: translate(-3px, 4px);
 }
 
 .checkbox-verification {
@@ -409,7 +412,7 @@ input {
     border-radius: 15px;
     
 }
-/*rgb(119, 94, 27)*/
+
 .checkbox-verification label {
     margin-bottom: 20px;
 }
