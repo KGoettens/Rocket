@@ -6,39 +6,41 @@
     <title>GX2 - Rocket Talents</title>
     <meta charset="utf-8">
 
+
     <link href="../reset.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
     <div class="estrutura">
         <header class="header">
-            <a href="index.html"><img src="Imagens/Logo-1@2x.png" alt="Logo GX2"></a>
+            <a href="index.html" class="logo-header"><img src="Imagens/Logo-1@2x.png" alt="Logo GX2"></a>
             <nav>
                 <ul>
-                    <li>Soluções</li>
-                    <li>Cases</li>
-                    <li>Carreira</li>
-                    <li>Blog</li>
-                    <li>Sobre</li>
+                    <li><a href="#">Soluções</a></li>
+                    <li><a href="#">Cases</a></li>
+                    <li><a href="#">Carreira</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Sobre</a></li>
                 </ul>
             </nav>
             <button class="button-contato">Contato</button>
         </header>
 
-        <div class="apresentacao">
-            <img src="Imagens/Logo@2x.png" alt="Logo GX2">
-
-            <h1>Você está pronto(a) para decolar a sua carreira?</h1>
-
-            <p>Nossa tripulação está pronta para crescer com você e formar novas estrelas no universo da TI!</p>
-
-            <img src="Imagens/Logo Rocket.svg" alt="Logo Rocket Talents">
-
-            <img src="Imagens/Logo Rocket Talents.svg" alt="Logo Rocket Talents">
-        </div>
-
         <main class="conteudo">
+            <div class="apresentacao">
+                <img src="Imagens/Logo@2x.png" alt="Logo GX2">
+
+                <h1>Você está pronto(a) para decolar a sua carreira?</h1>
+
+                <p>Nossa tripulação está pronta para crescer com você e formar novas estrelas no universo da TI!</p>
+
+                <img src="Imagens/Logo Rocket.svg" alt="Logo Rocket Talents">
+
+                <img src="Imagens/Logo Rocket Talents.svg" alt="Logo Rocket Talents">
+            </div>
+
             <div class="sobre">
                 <h1>Sobre o programa Rocket Talents</h1>
 
@@ -71,13 +73,13 @@
                     <li><img src="Imagens/Grupo 472.svg" alt="ícone de foguete">
                         <h2>Trabalhe na GX2</h2>
                         <p>Após a etapa de Pré Rocket os candidatos concorrem às vagas de Rockets, Fazendo parte do time
-                        GX2, agora remunerado.</p>
+                            GX2, agora remunerado.</p>
                     </li>
 
                     <li><img src="Imagens/Grupo 467.svg" alt="ícone de pessoas">
                         <h2>Rocket</h2>
                         <p>Os Rockets que forem aprovados na última etapa serão inseridos no time, atuando com projetos
-                        de tecnologia da GX2.</p>
+                            de tecnologia da GX2.</p>
                     </li>
                 </ul>
             </div>
@@ -139,7 +141,7 @@
                 <p>Há 12 anos no mercado de TI, com abrangência nacional, alocando nossos talentos e construindo
                     soluções inteligentes para nossos clientes e parceiros.</p>
 
-                <button type="submit">Fale conosco ✆</button>
+                    <a href="#"><button type="submit">Fale conosco ✆</button></a>
             </div>
 
             <div class="servicos">
@@ -154,25 +156,31 @@
                 <p>Carreira</p>
             </div>
 
-            <div class="localizacao">
-                <div class="endereco">
-                <img src="Imagens/Caminho 223.svg" alt="Ícone de localização.">
-                    <h4>Porto Alegre - RS</h4>
-                    <p>+55 51 3062-7242 | Instituto Caldeira - Tv. São José, 455 - Navegantes</p>
+            <section class="localizacao">
+
+                <div class="img-localizacao">
+                    <img src="Imagens/Caminho 223.svg" alt="Ícone de localização.">
+                    <img src="Imagens/Caminho 223.svg" alt="Ícone de localização.">
+                    <img src="Imagens/Caminho 223.svg" alt="Ícone de localização.">
                 </div>
 
-                <div class="endereco">
-                <img src="Imagens/Caminho 223.svg" alt="Ícone de localização.">
-                    <h4>São Paulo - SP</h4>
-                    <p>+55 11 3818.8969 | Av. Brig. Faria Lima 4509/8º andar Vila Olímpia</p>
-                </div>
+                <ul class="lista-info">
+                    <li>
+                        <h4>Porto Alegre - RS</h4>
+                        <p class="info">+55 51 3062-7242 | Instituto Caldeira - Tv. São José, 455 - Navegantes</p>
+                    </li>
+
+                    <li>
+                        <h4>São Paulo - SP</h4>
+                        <p class="info">+55 11 3818.8969 | Av. Brig. Faria Lima 4509/8º andar Vila Olímpia</p>
+                    </li>
                     
-                <div class="endereco">
-                <img src="Imagens/Caminho 223.svg" alt="Ícone de localização.">
-                    <h4>Belo Horizonte - MG</h4>
-                    <p>+55 31 3555.3363 | Av. do Contorno 6594 / 7ºandar Bairro Savassi</p>
-                </div>
-            </div>
+                    <li>
+                        <h4>Belo Horizonte - MG</h4>
+                        <p class="info">+55 31 3555.3363 | Av. do Contorno 6594 / 7ºandar Bairro Savassi</p>
+                    </li>
+                </ul>
+            </section>
         </footer>
     </div>
 </body>

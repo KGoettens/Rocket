@@ -1,3 +1,174 @@
-/*body {
-    font: normal normal bold 40px/52px Montserrat;
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
 }
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+p {
+    font-weight: 400;
+    color: #032624;
+}
+
+.estrutura {
+    grid:
+        "header header header" 
+        "conteudo conteudo conteudo" 
+        "footer footer footer" 
+    /   1fr 1fr 1fr
+    ;
+}
+
+/*HEADER*/
+
+.header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    background: #F6F6F7;
+}
+
+.logo-header {
+    max-width: 135px;
+    min-width: 100px;
+    margin: 20px 0 20px 120px;
+}
+
+.header ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header ul a {
+    font-size: 18px;
+    font-weight: 500;
+    color: #1C1C1D;
+    text-decoration: none;
+}
+
+.header li + li {
+    margin-left: 40px;
+}
+
+.button-contato {
+    width: 215px;
+    height: 40px;
+    justify-self: center;
+    background: #10DFC2;
+    color: #FBFBFB;
+    font-size: 18px;
+    border-style: none;
+    border-radius: 15px;
+    margin: 20px 120px 20px 0;
+}
+
+
+
+
+
+
+
+/*NEWSLETTER*/
+
+.newsletter {
+    grid-area: newsletter;
+    background: #19DBD1;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+}
+
+/*FOOTER*/
+
+
+.footer {
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 1fr 1fr minmax(50px, 50px) 1fr;
+    margin: 0 auto;
+    background: #04254C;
+}
+
+/*CONTATO*/
+
+.contato {
+    display: grid;
+    grid-template-rows: auto;
+    margin: 50px auto 145px auto;
+}
+
+.contato img {
+    max-width: 135px;
+    min-width: 100px;
+    margin-bottom: 30px;
+}
+
+.contato b {
+    width: 350px;
+    color: white;
+    font-size: 16px;
+    text-align: left;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.contato p {
+    width: 430px;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.contato button {
+    width: 180px;
+    height: 35px;
+    background: #FFB900;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    border-style: none;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/*SERVIÇOS*/
+
+.servicos {
+    display: grid;
+    grid-template-rows: auto;
+    margin: 50px auto 90px auto;
+    color: white;
+}
+
+.servicos h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.servicos p {
+    font-size: 16px; 
+    font-weight: 400;
+    margin-bottom: 15px;
+    color: white;
+}
+
+/*LOCALIZAÇÃO*/
+
+.localizacao {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+
+
+
+
