@@ -5,7 +5,7 @@
 <head>
     <title>GX2 - Rocket Talents</title>
     <meta charset="utf-8">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link href="../reset.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -13,10 +13,13 @@
 </head>
 
 <body>
-    <div class="estrutura">
-        <header class="header">
-            <a href="index.html" class="logo-header"><img src="Imagens/Logo-1@2x.png" alt="Logo GX2"></a>
-            <nav>
+    <header class="header">
+        <div class="menu">
+            <div class="logo-menu">
+                <a href="index.html" class="logo-header"><img src="Imagens/Logo-1@2x.png" alt="Logo GX2"></a>
+            </div>
+            
+            <nav class="menu-nav">
                 <ul>
                     <li><a href="#">Soluções</a></li>
                     <li><a href="#">Cases</a></li>
@@ -25,39 +28,56 @@
                     <li><a href="#">Sobre</a></li>
                 </ul>
             </nav>
-            <button class="button-contato">Contato</button>
-        </header>
+            
+            <div class="botao-menu">
+                <button class="botao-contato">Contato</button>
+            </div>
+        </div>
+    </header>
 
-        <main class="conteudo">
-            <div class="apresentacao">
-                <img src="Imagens/Logo@2x.png" alt="Logo GX2">
+        <section class="apresentacao">
+            <div class="logo-apresentacao">
+            <img src="Imagens/Logo@2x.png" alt="Logo GX2">
+            </div>
 
+            <div class="texto-apresentacao">
                 <h1>Você está pronto(a) para decolar a sua carreira?</h1>
 
                 <p>Nossa tripulação está pronta para crescer com você e formar novas estrelas no universo da TI!</p>
-
-                <img src="Imagens/Logo Rocket.svg" alt="Logo Rocket Talents">
-
-                <img src="Imagens/Logo Rocket Talents.svg" alt="Logo Rocket Talents">
             </div>
 
-            <div class="sobre">
+            <div class="apresentacao-img-1">
+            <img src="Imagens/Logo Rocket.svg" alt="Logo Rocket Talents">
+            </div>
+
+            <div class="apresentacao-img-2">
+            <img src="Imagens/Logo Rocket Talents.svg" alt="Logo Rocket Talents">
+            </div>
+        </section>
+
+        <section class="sobre">
+            <div class="texto-sobre">
                 <h1>Sobre o programa Rocket Talents</h1>
 
                 <p>O Rocket Talents é uma solução prática e efetiva para as empresas, <b>formando novos talentos no
                         mercado de TI</b> por um processo de capacitação intensa e eficaz.</p>
 
                 <p class="p-ciano">É a porta de entrada para o seu futuro!</p>
+            </div>
 
+            <div class="sobre-img">
                 <img src="Imagens/Foto 1@2x.png"
                     alt="Pessoa sorrindo apontando para o conteúdo mostrado nesta parte do site.">
             </div>
+        </section>
 
-            <div class="como-funciona">
-                <h1>Como funciona</h1>
+            <section class="como-funciona">
+                <div class="texto-como-funciona">
+                    <h1>Como funciona</h1>
 
-                <p>Nossos <b>especialistas técnicos irão ministrar os treinamentos</b> com base nas tecnologias que são
-                    demandadas pelos nossos clientes.</p>
+                    <p>Nossos <b>especialistas técnicos irão ministrar os treinamentos</b> com base nas tecnologias que são
+                        demandadas pelos nossos clientes.</p>
+                </div>
 
                 <ul class="etapas">
                     <li><img src="Imagens/Caminho 219.svg" alt="ícone de lupa">
@@ -82,11 +102,15 @@
                             de tecnologia da GX2.</p>
                     </li>
                 </ul>
-            </div>
+            </section>
 
-            <div class="informacoes">
-                <div class="requisitos">
+            <section class="informacoes">
+                
+                <div classs="img-informacoes">
                     <img src="Imagens/Foto 2@2x.png" alt="Pessoa vibrando.">
+                </div>
+
+                <div class="requisitos">
                     <h1>Requisitos</h1>
 
                     <h2>Estamos buscando pessoas que:</h2>
@@ -113,70 +137,77 @@
 
                         <li>• Cronograma de ensino é pré-estabelecido ao início das aulas.</li>
                     </ul>
-
-                    <img src="Imagens/Foto 3@2x.png" alt="Pessoa utilizando um notebook.">
                 </div>
-            </div>
+
+                <div class="img-detalhes">
+                    <img src="Imagens/Foto 3@2x.png" alt="Pessoa utilizando um notebook.">
+                </div>   
+            </section>
 
             <section class="newsletter">
                 <div class="newsletter-info">
                     <h1>Receba nossas novidades</h1>
                     <p>Fique por dentro dos conteúdos que preparamos para você!</p>
                 </div>
-
+                
                 <form class="newsletter-form">
                     <p>Seu e-mail:</p>
                     <input type="email" placeholder="Seu email">
                     <button type="submit">Assinar</button>
                 </form>
             </section>
-        </main>
 
-        <footer class="footer">
-            <div class="contato">
+    <footer class="footer">
+        <section class="contato">
+            <div class="img-contato">
                 <img src="Imagens/logo-gx2-fundo-escuro@2x.png" alt="Logo GX2">
+            </div>
+            <div class="texto-contato">
+            <b>Parceiro estratégico para a transformação digital da sua empresa!</b>
 
-                <b>Parceiro estratégico para a transformação digital da sua empresa!</b>
-
-                <p>Há 12 anos no mercado de TI, com abrangência nacional, alocando nossos talentos e construindo
-                    soluções inteligentes para nossos clientes e parceiros.</p>
-
-                    <a href="#"><button type="submit">Fale conosco ✆</button></a>
+            <p>Há 12 anos no mercado de TI, com abrangência nacional, alocando nossos talentos e construindo
+                soluções inteligentes para nossos clientes e parceiros.</p>
             </div>
 
-            <div class="servicos">
-                <h3>Serviços:</h3>
-                <p>Outsourcing</p>
-                <p>Labs & Projetos</p>
-                <p>Esteira de testes</p>
-                <p>Data Science</p>
-                <p>Concepção</p>
-                <p>DXP Liferay</p>
-                <p>Blog</p>
-                <p>Carreira</p>
+            <div class="botao-contato">
+                <a href="#"><button type="submit">Fale conosco ✆</button></a>
             </div>
-            
+        </section>
+
+        <section class="servicos">
+            <h3>Serviços:</h3>
+            <p>Outsourcing</p>
+            <p>Labs & Projetos</p>
+            <p>Esteira de testes</p>
+            <p>Data Science</p>
+            <p>Concepção</p>
+            <p>DXP Liferay</p>
+            <p>Blog</p>
+            <p>Carreira</p>
+        </section>
+
+        <section class="localizacao">
             <ul class="lista-info">
                 <li>
-                    <span><img src="Imagens/Caminho 223.svg" alt="ícone de localização."></span>
+                    <img src="Imagens/Caminho 223.svg" alt="ícone de localização.">
                     <h4>Porto Alegre - RS</h4>
                     <p class="info">+55 51 3062-7242 | Instituto Caldeira - Tv. São José, 455 - Navegantes</p>
                 </li>
 
                 <li>
-                    <span><img src="Imagens/Caminho 223.svg" alt="ícone de localização."></span>
+                    <img src="Imagens/Caminho 223.svg" alt="ícone de localização.">
                     <h4>São Paulo - SP</h4>
                     <p class="info">+55 11 3818.8969 | Av. Brig. Faria Lima 4509/8º andar Vila Olímpia</p>
                 </li>
-                    
+
                 <li>
-                    <span><img src="Imagens/Caminho 223.svg" alt="ícone de localização."></span>
+                    <img src="Imagens/Caminho 223.svg" alt="ícone de localização.">
                     <h4>Belo Horizonte - MG</h4>
                     <p class="info">+55 31 3555.3363 | Av. do Contorno 6594 / 7ºandar Bairro Savassi</p>
                 </li>
             </ul>
-        </footer>
-    </div>
+        </section>
+    </footer>
 </body>
 
 </html>
