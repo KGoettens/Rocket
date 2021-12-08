@@ -1,0 +1,287 @@
+body {
+    font-family: "Segoe UI";
+    background-color: #FFF;
+}
+
+img {
+    display: block;
+    max-width: 835px;
+}
+
+a, b {
+    text-decoration: none;
+    
+}
+
+b {
+    text-transform: uppercase;
+}
+
+.col-wide {
+    grid-column: 1 / -1;
+}
+
+.row-wide {
+    grid-row: 1 / 3;
+}
+
+/*PÁGINA*/
+
+.conteudo-geral {
+    display: grid;
+    grid:
+    "header"
+    "titulo" 
+    "conteudo"
+    "veja-mais"
+    "footer"
+    ;
+}
+
+/*HEADER*/
+
+.header {
+    grid-area: header;
+    background: #C4170C;
+    display: grid;
+    grid-template-columns: 1fr 260px 1fr;
+    align-items: center;
+    justify-items: flex-start;
+    padding: 22.5px 95px 22.5px 100px;
+}
+
+.menu {
+    justify-self: flex-start;
+}
+
+.menu a {
+    display: grid;
+    grid-template-columns: auto 80px;
+    align-items: center;
+    justify-items: flex-end;
+}
+
+.menu img {
+    width: 46px;
+}
+
+.menu p {
+    font-size: 1.5em;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.input-header {
+    width: 325px;
+    height: 45px;
+    box-sizing: border-box;
+    background: url(imagens/lupa@2x.png) no-repeat;
+    background-size: 30px 33px;
+    background-position: 15px 6px;
+    padding-left: 60px;
+    background-color: #8B0000;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 1.5em;
+    justify-self: flex-end;
+}
+
+.input-header::-webkit-input-placeholder {
+   color: white;
+}
+
+/*TÍTULO*/
+
+.titulo {
+    grid-area: titulo;
+    padding: 0 95px 0 100px;
+}
+
+.titulo h1 {
+    font-size: 35px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 45px 160px 60px 0;
+    text-align: center;
+}
+
+/*CONTEÚDO*/
+
+.conteudo {
+    grid-area: conteudo;
+    padding: 0 95px 0 100px;
+    display: grid;
+    gap: 150px;
+}
+
+/*MELHORES NOTÍCIAS*/
+
+.melhores-noticias {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 95px;
+}
+
+/*NOTÍCIA 1*/
+
+.noticia-destaque {
+    border: 1px solid #707070;
+    border-radius: 4px;
+    display: grid;
+    align-items: center;
+    padding: 0 30px;
+}
+.noticia-destaque p {
+    font-size: 40px;
+    text-align: left;
+    color: #8B0000;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -2px;
+    padding-right: 90px;
+    margin-bottom: 7px;
+}
+
+.noticia-destaque span {
+    font-size: 20px;
+    color: #8B0000;
+    font-weight: 400;
+    padding-left: 7px;
+}
+
+/*NOTÍCIA 2*/
+
+.melhores-noticias a {
+    font-size: 25px;
+    color: black;
+    font-weight: 600;
+}
+
+.margin {
+    margin-top: 7px;
+}
+
+/*NOTÍCIAS ECONOMIA*/
+
+.noticias-economia {
+    display: grid;
+    gap: 60px;
+}
+
+.noticias-economia a {
+    display: grid;
+    gap: 50px;
+    grid-template-columns: minmax(300px, 655px) 1fr;
+    align-items: center;
+    border-bottom: 1px solid #707070;
+    padding-bottom: 100px; 
+}
+
+.noticias-economia a img {
+    max-width: 655px;
+}
+
+.ne-txt {
+    max-width: 735px;
+    height: 100%;
+    display: grid;
+    grid-template-rows: max-content;
+} 
+
+.ne-txt h3 {
+    font-size: 25px;
+    color: #000;
+    font-weight: 600;
+}
+
+.ne-txt h2 {
+    color: #C4170C;
+    font-size: 35px;
+    font-weight: 600;
+    padding-right: 56px;
+}
+
+.ne-txt p {
+    color: #000;
+    font-size: 27px;
+    letter-spacing: -1px;
+}
+
+.ne-txt span {
+    color: #746565;
+    font-size: 27px;
+}
+
+
+/*BOTÃO VEJA MAIS*/
+
+.botao {
+    grid-area: veja-mais;
+    padding: 0 95px 0 100px;
+    display: grid;
+}
+
+.botao button {
+    width: 390px;
+    height: 90px;
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: #C4170C;
+    border: 1px solid #707070;
+    border-radius: 4px;
+    justify-self: center;
+    margin: 185px 0;
+}
+
+/*FOOTER*/
+
+.footer {
+    grid-area: footer;
+    padding: 0 95px 0 100px;
+    background: #C4170C;
+    display: grid;
+    border: 1px solid #707070;
+    padding-bottom: 10px;
+}
+
+.logo-footer {
+    display: grid;
+    grid-template-columns: 101px 220px;
+    gap: 35px;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.logo-footer p {
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.info-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 45px;
+    align-items: end;
+}
+
+.info-footer p, .menu-footer a {
+    color: white;
+    font-size: 22px;
+}
+
+.menu-footer ul {
+    display: grid;
+    grid-template-columns: 205px 250px 150px 100px;
+    justify-content: end
+}
+
+.menu-footer li + li::before {
+    content: '';
+    border-left: 1px solid white;
+    padding-left: 15px;
+}
