@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+    <head>
+        <title> Lógica </title>
+        <meta charset="utf-8">
+    
+    </head>
+
+    <body>
+        <button onclick="criarAlert(largura1, altura1)">Criar Alert</button>
+        <button onclick="criarOutput(largura, altura)">Criar Output</button>
+    
+        <button onclick="limpar()">Limpar</button>
+
+        <div id="output"></div>
+
+        <script>
+                var largura = parseFloat;
+                var altura = parseFloat;
+                var largura1 = parseFloat;
+                var altura1 = parseFloat;
+
+            function criarAlert(largura, altura){
+                
+                var largura = prompt("Digite a largura:");
+                var altura = prompt("Digite a altura:");
+                if (isNaN(largura) || isNaN(altura)) {
+                    alert("Utilize somente números.");
+                    return 0;
+                } 
+
+                alert("X: " + largura + " Y: " + altura);
+                alert("Área total: " + (largura * altura));
+            }
+
+            criarAlert();
+
+            function criarOutput(largura1, largura1) {
+                largura1 = prompt("Digite a largura:");
+                altura1 = prompt("Digite a altura:");
+                if (isNaN(largura1) || isNaN(altura1)) {
+                    alert("Utilize somente números.");
+                    return 0;
+                } 
+
+                document.querySelector('#output').innerHTML = "<br>" + "X: " + largura1 + " Y: " + altura1 + "<br>" + "Área total: " + (largura1 * altura1);
+            }
+
+            function limpar() {
+                document.querySelector('#output').innerHTML = '';
+            }
+           
+        </script>
+    </body>
+
+</html>
