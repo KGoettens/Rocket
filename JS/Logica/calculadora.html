@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+    <head>
+        <title> Lógica </title>
+        <meta charset="utf-8">
+    
+    </head>
+
+    <body>
+        <button onclick="iniciarCalculo('+')">+</button>
+        <button onclick="iniciarCalculo('-')">-</button>
+        <button onclick="iniciarCalculo('X')">X</button>
+        <button onclick="iniciarCalculo('/')">/</button>
+
+        <button onclick="limpar()">Limpar</button>
+
+        <div id="output"></div>
+
+        <script>
+            
+            var n = parseFloat(prompt("Digite um número:"));
+            
+            escrever(n);
+
+            var mensagem = "";
+            
+            function iniciarCalculo(calculo) {
+                
+                n = document.querySelector("#output").textContent;
+                n = parseFloat(n);
+                
+                var n1 = prompt("Digite outro número:");
+                n1 = parseFloat(n1);
+                try {
+                    var mensagem = calcular(calculo, n, n1);
+                } catch(e) {
+                    alert("Utilize somente números.");
+                }
+                escrever(mensagem);
+            }
+
+            function escrever(mensagem) {
+                var output = document.querySelector("#output");
+                
+                output.innerHTML = mensagem;
+            }
+
+            function calcular(calculo, n, n1) {             
+                if (isNaN(n) || isNaN(n1)) {
+                    alert("Utilize somente números.");
+                    return 0;
+                }
+                var total = null;
+
+                    switch (calculo) {
+                    case '+': total = n + n1;
+                    break;
+                    case '-': total = n - n1;
+                    break;
+                    case 'X': total = n * n1;
+                    break;
+                    case '/': total = n / n1;
+                } 
+                return total;
+                mensagem += total;
+                escrever(mensagem);
+            }
+
+            function limpar() {
+                mensagem = n = parseInt(prompt("Digite um número:"));
+                output.innerHTML = mensagem;
+            }
+           
+        </script>
+    </body>
+
+</html>

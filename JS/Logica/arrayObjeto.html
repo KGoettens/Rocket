@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+    <head>
+        <title> Lógica </title>
+        <meta charset="utf-8">
+
+    </head>
+
+    <body>
+
+        <div id='output'></div>
+    </body>
+
+    <script>
+
+        var produtos = [{"nome":"lapis", "preco": "1,00", "total": 150}, 
+        {"nome": "caderno", "preco": "10,00", "total": 115}];
+        
+        var msg = '';
+
+        for(var i = 0; i < produtos.length; i++){
+        msg += "Objeto: " + produtos[i].nome + "<br>Preço: R$" + produtos[i].preco + "<br>Total de itens: " + produtos[i].total + "<br>";
+        }   
+        document.querySelector('#output').innerHTML = msg;
+    </script>
+
+</html>
