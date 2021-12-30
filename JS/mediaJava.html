@@ -93,11 +93,14 @@
 
 			while(trs[x]){
 				var linha = trs[x];
+
 				console.log(linha);
+
 				var n1, n2, n3, n4, media;
 				
 				var tds = linha.querySelectorAll('td');
-
+				console.log(tds);
+				
 				n1 = nota(tds[1]);
 				n2 = nota(tds[2]);
 				n3 = nota(tds[3]);
@@ -110,8 +113,8 @@
 				x++;
 			}
 
-			function nota(tds) {
-				return parseFloat(tds.textContent);
+			function nota(td) {
+				return parseFloat(td.textContent);
 			}
 			
 		})()
