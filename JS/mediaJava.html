@@ -8,7 +8,7 @@
 	<link href="css/bootstrap.css" rel="stylesheet">
 	<link href="css/bootstrap-theme.css" rel="stylesheet">
 
-	<script src="beluga.js"></script>
+	<script src="calcularMedia.js"></script>
 
 </head>
 
@@ -100,14 +100,14 @@
 				
 				var tds = linha.querySelectorAll('td');
 				console.log(tds);
-				
+
 				n1 = nota(tds[1]);
 				n2 = nota(tds[2]);
 				n3 = nota(tds[3]);
 				n4 = nota(tds[4]);
 
 				media = calcularMedia(n1, n2, n3, n4);
-
+				
 				linha.querySelector('.aluno-m').textContent = media;
 
 				x++;
