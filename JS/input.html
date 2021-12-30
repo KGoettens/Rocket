@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+    <head>
+        <title> JS </title>
+        <meta charset="utf-8">
+
+    </head>
+
+    <body>
+        <p>Digite seu nome:</p>
+        <input type="text" id="input" value=''><button onclick="escreve()">clica</button>
+        
+        <div id="msg"></div>
+
+        <script>
+            var input = document.querySelector("#input");
+
+            function escreve() {
+                
+                var nome = input.value;
+
+                document.querySelector('#msg').innerHTML = 'Bem vindo ' + nome;
+                
+            }
+        </script>
+    </body>
+</html>

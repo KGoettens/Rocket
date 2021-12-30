@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+    <head>
+        <title> JS </title>
+        <meta charset="utf-8">
+
+    </head>
+
+    <body>
+        <div id='output'></div>
+    </body>
+
+    <script>
+        (function(){
+            var n = parseFloat(prompt("Digite um número")); 
+            var n1 = parseFloat(prompt("Digite outro número")); 
+
+            var msg = '';
+
+            function m(n, n1){
+                return (n + n1) / 2;
+                
+            }
+
+            var media = m(n, n1);
+
+            msg = ("A média entre os dois números é: " + media);
+
+            document.querySelector('#output').innerHTML = msg;
+
+
+
+        }) ()
+       
+    </script>
+
+</html>
