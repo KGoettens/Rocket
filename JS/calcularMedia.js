@@ -10,4 +10,4 @@ function calcularMedia(){
     }                    
 
     return total / qtd;
-}
+}debugger

@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>Curso Javascript Completo 2018</title>
+	<title>JS</title>
 	<meta charset="utf-8">
 
 	<link href="css/bootstrap.css" rel="stylesheet">
@@ -87,38 +87,41 @@
 
 		(function () {
 
-			var trs = document.querySelectorAll('tbody .js-tabela .aluno');
+			var trs = document.querySelectorAll('.js-tabela tbody .aluno');
 
 			var x = 0;
 
 			while(trs[x]){
 				var linha = trs[x];
 
-				console.log(linha);
-
-				var n1, n2, n3, n4, media;
-				
 				var tds = linha.querySelectorAll('td');
-				console.log(tds);
-
-				n1 = nota(tds[1]);
-				n2 = nota(tds[2]);
-				n3 = nota(tds[3]);
-				n4 = nota(tds[4]);
-
-				media = calcularMedia(n1, n2, n3, n4);
+				
+				var notas = pegarNotas(tds);
+				
+				media = calcularMedia.apply(this, notas);
 				
 				linha.querySelector('.aluno-m').textContent = media;
 
 				x++;
 			}
+			
+			function pegarNotas(tds){
+				var x = 0;
+				var arr = [];
 
-			function nota(td) {
-				return parseFloat(td.textContent);
+				while (tds[x]){
+					if (!isNaN(tds[x].textContent) && tds[x].textContent !== ''){
+						arr.push(parseFloat(tds[x].textContent));
+					}
+					x++;
+				}
+				return arr;
 			}
 			
-		})()
-
+			function transformar(td){
+				return parseFloat(td.textContent);
+			}
+	})()
 	</script>
 
 </body>

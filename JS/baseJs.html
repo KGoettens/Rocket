@@ -8,12 +8,23 @@
 </head>
 
 <body>
-
-
-
-
-
+    <div id='output'></div>
 
 </body>
 
+<script>
+    (function(){
+        'use strict';
+        var produtos = [{"nome":"caneta", "preco": "1,00", "cor": "black"}, 
+        {"nome":"caneta", "preco": "2,00", "cor": "red"},
+        {"nome":"caneta", "preco": "3,00", "cor": "green"},];
+        
+        var msg = '';
+
+        for(var i = 0; i < produtos.length; i++){
+        msg += "Objeto: " + produtos[i].nome + "<br>Preço: R$" + produtos[i].preco + "<br>Cor: " + produtos[i].cor + "<br>";
+        }   
+        document.querySelector('#output').innerHTML = msg;
+    })()
+</script>
 </html>
